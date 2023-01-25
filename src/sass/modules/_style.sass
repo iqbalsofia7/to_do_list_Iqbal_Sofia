@@ -5,15 +5,104 @@
     font-family: Police
 a
     text-decoration: none
+body
+    display: flex
+    justify-content: center
+    flex-direction: column
+    background-image: url('../../public/img/wp.jpg')
+    background-size: cover
+    background-position-x: center 
 li
     list-style: none
+div
+    display: flex
+    justify-content: center
+#divTitle
+    background-color: white
+    border-radius: 5px
+    border: #75a778 3px solid
+    padding: 8px 50px
+    margin: 10px 
+    display: flex
+    justify-content: center
+#title 
+    text-align: center
+    font-weight: 900
+#addItem
+    display: flex
+    gap: 5px
+    margin: 10px
+#addBtn
+    width: 35px
+    height: 35px
+    border: #75a778 3px solid
+    background-color: white
+    &:hover
+        background-color: #2d5430
+        color: white
+#inputTxt 
+    height: 35px
+    width: 250px
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+    border: #75a778 3px solid
+    padding: 0 10px
+#tri
+    display: flex
+    justify-content: flex-end
+    gap: 5px
+    margin: 5px 15px
+    button
+        padding: 3px 8px
+        border: #75a778 3px solid
+        background-color: white
+        font-weight: 600
+        &:hover
+            color: white
+            background-color: #2d5430
 
-//----------------------------------------Style-------------------------------------------
+#allToDos
+    display: inline
+    justify-content: flex-start
+    // flex-direction: row
+    background-color: white
+    width: 720px
+    height: 500px
+    margin: 20px auto
+    border: #75a778 3px solid
+.task
+    display: flex
+    justify-content: space-between
+    text-align: left
+    width: 340px
+    // justify-content: left
+    margin: 5px 10px
+    gap: 5px
+    border: #75a778 3px solid
+    padding: 5px 10px 5px 20px
+.divInsideTask
+        float: right
+        display: flex
+        gap: 5px
+        button
+            width: 30px
+            height: 30px
+            background-color: #AED59E
+            &:hover
+                background-color: #2d5430
+                color: white
+                
+#toDoList
+    padding: 20px 0px
+    overflow-y: hidden
+    margin: 0
+    display: grid
+    grid-template-columns: 350px 350px
 
-
-//-------------------------------------MEDIA-QUERY---------------------------------------
-//Tablette
-@media (min-width: 600px) and (max-width: 1024px)
+.done
+    text-decoration: line-through
+    font-style: italic
+    color: #6c6868
+    background-color: #cddec6
     
-//Mobile
-@media (min-width: 320px) and (max-width: 600px)
+    
